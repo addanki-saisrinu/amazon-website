@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>amazon</title>
+    <!-- google font link start here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--google font link end here-->
+
+    <!--add bootstrap-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!--add bootstrap icons-->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+
+    <!--styles page link start here-->
+    <link rel="stylesheet" href="../src/styles/styles.css">
+
+    <!--font styles-->
+    <link rel="stylesheet" href="../src/styles/fonts.css">
+
+    <!--utilities styles-->
+    <link rel="stylesheet" href="../src/styles/utilities.css">
+    <!--styles page link end here-->
 </head>
+
 <body>
-    <p>this is main page</p>
+
+    <!--header section starts here-->
+
+    <div class="wrapper">
+        <header>
+            <!--header main start-->
+
+            <div class="header d-flex flex-row justify-content-start align-items-center flex-nowrap float-none fs-14 h-60 w-100 lh-12 container-fluid">
+
+                <!--header left section starts here-->
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <!--header nav logo section start here-->
+
+                    <div class="nav-logo d-flex">
+                        <a href="#" class="h-50 d-flex clearfix text-decoration-none justify-content-start align-items-center ps-6 pe-8 pt-3 pb-3">
+                            <span class="nav-logo-base h-34 mt-8"></span>
+                            <span class="text-white fs-13-5 fw-400">.in</span>
+                        </a>
+                    </div>
+                    <!--header nav logo section ends here-->
+
+                    <!--header nav global section starts here-->
+                    <div class="global-location text-white pt-9 pb-9" id="locationModalButton">
+                       <span class="d-flex">
+                        <a href="#" class="d-flex flex-row justify-content-start align-items-center pe-8 ps-6 text-decoration-none text-white">
+                            <div>
+                                <span class="bi bi-geo-alt h-18 w-15 d-inline-block mt-8"></span>
+                            </div>
+                            <div class="d-flex flex-column" style="line-height: 14px;">
+                                <div>
+                                    <span class="fs-12 fw-400 delivering-location-font-color">Delivering to Hyderabad 500003</span>
+                                </div>
+                                <div>
+                                    <span class="fw-700">Update Location</span>
+                                </div>
+                            </div>
+                        </a>
+                       </span>
+                    </div>
+                    <!--header nav global section ends here-->
+
+                    <!--header nav global location modal pop up starts here-->
+
+                    <div class="location-modal" id="locationModal">
+                        <div class="location-modal-dialog">
+                            <div class="location-modal-content">
+                                <div class="location-modal-header clearfix">
+                                    <h3>Choose your location</h3>
+                                    <a class="close-button text-decoration-none text-black" id="modalCloseBtn">
+                                        <span>X</span>
+                                    </a>
+                                </div>
+                                <div class="location-modal-body">
+                                    <span class="fs-12 lh-16 mb-16 d-inline-block">
+                                        Select a delivery location to see product availability and delivery options
+                                    </span>
+                                    <a href="#" class="d-block text-decoration-none text-white mx-auto bg-warning text-center pt-8 pb-8 rounded rounded-pill">
+                                        Sign in to see your address
+                                    </a>
+                                </div>
+                                <div class="location-modal-footer">
+                                    <div class="line"></div>
+                                    <div class="line-text">
+                                        <form action="" >
+                                            <fieldset>
+                                                <legend class="fs-12">or enter an indian pincode</legend>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--header nav global location modal pop up ends here-->
+
+                </div>
+                <!--header left section ends here-->
+
+                <div class="d-flex flex-grow-1 flex-shrink-0">
+                    2
+                </div>
+                <div>
+                    3
+                </div>
+            </div>
+            <!--header main end-->
+
+        </header>
+    </div>
+
+    <!--header section ends here-->
+
+
+    <!--js file link start here-->
+    <script src="./script.js"></script>
+    <!--js file link end here-->
+
+    <!--add bootstap script file-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.bundle.js">
 </body>
+
 </html>

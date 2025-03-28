@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(19, 25, 33);
+    color: rgb(15, 17, 17);
+}
+
+.nav-logo:hover {
+    box-shadow: 0px 0px 1px 1px white inset;
+}
+
+.nav-logo a {
+    color: rgb(15, 17, 17);
+}
+
+/* main logo */
+
+.nav-logo-base {
+    background-image: url("../../public/images/nav-logo-base.png");
+    background-size: contain;
+    width: 9.8rem;
+}
+
+.global-location:hover {
+    box-shadow: 0px 0px 1px 1px white inset;
+}
+
+.delivering-location-font-color {
+    color: rgb(204, 204, 204);
+}
+
+/* global location modal start here */
+.location-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 34rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 7px 2px gray;
+    overflow: hidden;
+    display: none;
+}
+
+.location-modal-header {
+    border-bottom: 1px solid gray;
+    padding: 1.5rem;
+    position: relative;
+    background-color: rgb(243, 236, 236);
+}
+
+.close-button {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translate(-50%,-50%);
+    border: 1px solid gray;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.location-modal-body {
+    border-bottom: 1px solid gray;
+    padding: 1.5rem;
+}
+
+.location-modal-footer {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.line {
+    width: 100%;
+    background-color: gray;
+    height: 0.1rem;
+}
+
+.line-text {
+    position: absolute;
+}
+
+/* global location modal ends here */
