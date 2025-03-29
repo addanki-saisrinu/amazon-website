@@ -48,6 +48,5 @@ if(NAVSEARCHBAR){
 const  CATEGORIES = document.getElementById("categories");
 if(CATEGORIES){
     CATEGORIES.addEventListener("click",function(){
-        alert("categories clicked");
     })
 }
