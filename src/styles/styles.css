@@ -85,14 +85,46 @@ header {
     position: relative;
 }
 
-.line {
+fieldset {
+    position: relative;
+    border-top: 1px solid gray;
+    padding: 10px;
     width: 100%;
-    background-color: gray;
-    height: 0.1rem;
 }
 
-.line-text {
+legend {
     position: absolute;
+    top: -7px;
+    left: 20px;
+    background: white;
+    padding: 0 10px;
+    font-weight: bold;
+    color: black;
+    max-width: 165px;
+    margin: auto;
+}
+
+.input-outline {
+    padding: 6px;
+}
+
+.input-outline:focus {
+    outline: none;
 }
 
 /* global location modal ends here */
+
+
+/* header search bar styles starts here */
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+
+.search-bar-in-nav {
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+/* header search bar styles ends here*/

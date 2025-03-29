@@ -41,7 +41,7 @@
             <div class="header d-flex flex-row justify-content-start align-items-center flex-nowrap float-none fs-14 h-60 w-100 lh-12 container-fluid">
 
                 <!--header left section starts here-->
-                <div class="d-flex flex-row justify-content-start align-items-center">
+                <div class="d-flex flex-row justify-content-start align-items-center flex-shrink-0">
                     <!--header nav logo section start here-->
 
                     <div class="nav-logo d-flex">
@@ -87,8 +87,8 @@
                                     <span class="fs-12 lh-16 mb-16 d-inline-block">
                                         Select a delivery location to see product availability and delivery options
                                     </span>
-                                    <a href="#" class="d-block text-decoration-none text-white mx-auto bg-warning text-center pt-8 pb-8 rounded rounded-pill">
-                                        Sign in to see your address
+                                    <a href="#" class="d-block text-decoration-none text-black mx-auto bg-warning text-center pt-8 pb-8 rounded rounded-pill">
+                                        Sign in to see your address 
                                     </a>
                                 </div>
                                 <div class="location-modal-footer">
@@ -96,7 +96,11 @@
                                     <div class="line-text">
                                         <form action="" >
                                             <fieldset>
-                                                <legend class="fs-12">or enter an indian pincode</legend>
+                                                <legend class="fs-12">or enter an indian pincode </legend>
+                                                <div class="w-100 d-flex gap-1">
+                                                    <input type="text" id="locationNumber" required class="w-75 input-outline form-control">
+                                                    <input type="button" id="updateLocationApplyButton" value="Apply" class="w-25 rounded rounded-pill global-location-update-button">
+                                                </div>
                                             </fieldset>
                                         </form>
                                     </div>
@@ -110,12 +114,16 @@
                 </div>
                 <!--header left section ends here-->
 
-                <div class="d-flex flex-grow-1 flex-shrink-0">
-                    2
+                <div class="d-flex text-white input-group ps-8 pe-8 w-50 flex-shrink-0">
+                    <div class="input-group-text pointer-cursor" id="categories">
+                        <span class="">All   ▾</span>
+                    </div>
+                    <input type="text" class="input-group-text flex-fill search-bar-in-nav" id="navSearchBar">
+                    <span class="bi bi-search input-group-text pointer-cursor bg-warning border border-0 ps-16 pe-16" id="navSearchBarButton"></span>
                 </div>
-                <div>
+                <div class="text-white">
                     3
-                </div>
+                </div> 
             </div>
             <!--header main end-->
 
