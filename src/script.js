@@ -49,6 +49,5 @@ const  CATEGORIES = document.getElementById("categories");
 if(CATEGORIES){
     CATEGORIES.addEventListener("click",function(){
         alert("categories clicked");
-        console.log(`${CATEGORIES}`)
     })
 }
